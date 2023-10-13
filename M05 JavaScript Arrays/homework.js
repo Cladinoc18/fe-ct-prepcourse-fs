@@ -195,6 +195,14 @@ function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+   var arreglo2 =[];
+   for(i = 0; i < array.length; i++){
+      if(array[i] > 100){
+         arreglo2.push(array[i]);
+      }
+   }
+   return arreglo2;
+
 }
 
 /* ----------------------------------------------------------------------------------
@@ -208,6 +216,22 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+   var arreglo =[];
+   var suma = num;
+   for (var i = 0; i < 10; i++) {
+      suma = suma + 2;
+
+      if (suma === i){
+         break;
+      } else {
+         arreglo.push(suma);
+      }
+   }
+   if(i < 10) {
+      return 'Se interrumpió la ejecución';
+   } else {
+      return arreglo;
+   }
 }
 
 function continueStatement(num) {
@@ -217,6 +241,17 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+   var arreglo =[];
+   var suma = num;
+   for (var i = 0; i < 10; i++) {
+      if (i === 5){
+         continue;
+      } else {
+         suma = suma + 2;
+         arreglo.push(suma);
+      }
+   }
+      return arreglo;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
